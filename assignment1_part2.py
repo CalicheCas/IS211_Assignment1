@@ -1,4 +1,16 @@
 class Book:
+    """
+    Simple Book class to represent Book object.
+    
+    Parameter:
+    ----------
+    Author: str
+        Book Author.
+    
+    Title: str
+        Book title
+    
+    """
 
     author=""
     title=""
@@ -8,6 +20,7 @@ class Book:
         self.title = title
         
     def display(self):
+        """Print Author name and book title."""
         print('%s, written by %s' % (self.title, self.author))
         
 book1 = Book('Of Mice and Men','John Steinbeck')
